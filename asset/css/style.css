@@ -1,0 +1,54 @@
+#centro_civico{
+	padding: 5%;
+}
+
+.titulo{
+	text-align: center;
+	margin: 3%;
+}
+
+.civico h2{
+	text-align: center;
+	margin: 2%;
+}
+
+.civico p{
+	font-size: 20px;
+	padding: 5%;
+}
+
+/*cuando neustra pantalla sea min-width : 535px y max-width: 824px, haremos que cambien 
+todas las class col, para que tengan un width 100%, al body le cambiaremos color, tipografia y background, 
+ademas el color del borde de nuestra imagen*/
+
+@media(min-height: 535px) and (max-width: 824px){
+	[class*="col-"]{
+		width: 100%;
+	}
+	body{
+		background: black;
+		font-family: 'lobster', cursive;
+		color: white;
+	}
+	img{
+		border: 6px solid white;
+	}
+}
+
+/*cuando nuestra pantalla sea min-width:200px y max-width:534, haremos que cambien
+todas las class col, tendremos un width 100% al body le volveremos a cambiar color,
+tipografia y blackground, ademas nuestra imagen desaparecera (display:none)*/
+
+@media(min-width: 200px) and (max-width: 534px) {
+	[class*-"col-"]{
+		width: 100%;
+	}
+	body{
+		background: #07b399;
+		font-family:'indie flower', cursive;
+		color: #dfdfdf;
+	}
+	img{
+		display: none;
+	}
+}

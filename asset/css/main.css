@@ -1,0 +1,12 @@
+body{
+	font-family: "montserrat", sans-serif;
+	background: #f06e6e;
+	color: #6b0707;
+
+}
+
+img{
+	width: 100%;
+	border:6px solid #bd023b;
+	padding: 2%;
+}
